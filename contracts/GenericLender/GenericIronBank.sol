@@ -18,7 +18,7 @@ import "./GenericLenderBase.sol";
  *
  ********************* */
 
-contract GenericCream is GenericLenderBase {
+contract GenericIronBank is GenericLenderBase {
     using SafeERC20 for IERC20;
     using Address for address;
     using SafeMath for uint256;
@@ -45,7 +45,7 @@ contract GenericCream is GenericLenderBase {
         want.safeApprove(_cToken, uint256(-1));
     }
 
-    function cloneCreamLender(
+    function cloneIronBankLender(
         address _strategy,
         string memory _name,
         address _cToken
