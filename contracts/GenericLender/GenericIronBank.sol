@@ -12,9 +12,9 @@ import "@openzeppelin/contracts/token/ERC20/SafeERC20.sol";
 import "./GenericLenderBase.sol";
 
 /********************
- *   A lender plugin for LenderYieldOptimiser for any erc20 asset on Cream (not eth)
- *   Made by SamPriestley.com
- *   https://github.com/Grandthrax/yearnv2/blob/master/contracts/GenericLender/GenericCream.sol
+ *   A lender plugin for LenderYieldOptimiser for any erc20 asset on Iron Bank
+ *   Made by SamPriestley.com, edits with <3 by dudesahn
+ *   original repo: https://github.com/Grandthrax/yearnV2-generic-lender-strat
  *
  ********************* */
 
