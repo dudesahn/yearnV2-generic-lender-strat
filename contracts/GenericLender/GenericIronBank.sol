@@ -39,7 +39,7 @@ contract GenericIronBank is GenericLenderBase {
     }
 
     function _initialize(address _cToken) internal {
-        require(address(cToken) == address(0), "GenericCream already initialized");
+        require(address(cToken) == address(0), "GenericIronBank already initialized");
         cToken = CErc20I(_cToken);
         require(cToken.underlying() == address(want), "WRONG CTOKEN");
         want.safeApprove(_cToken, uint256(-1));
@@ -51,7 +51,7 @@ contract GenericIronBank is GenericLenderBase {
         address _cToken
     ) external returns (address newLender) {
         newLender = _clone(_strategy, _name);
-        GenericCream(newLender).initialize(_cToken);
+        GenericIronBank(newLender).initialize(_cToken);
     }
 
     function nav() external view override returns (uint256) {
